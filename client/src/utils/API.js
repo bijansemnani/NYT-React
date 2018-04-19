@@ -10,15 +10,15 @@ export default {
     return axios.get("/api/articles");
   },
   // Gets the book with the given id
-  getArticles: function(id) {
-    return axios.get("/api/articles/" + id);
-  },
+  // getArticles: function(id) {
+  //   return axios.get("/api/articles/" + id);
+  // },
   // Deletes the book with the given id
   deleteArticles: function(id) {
     return axios.delete("/api/articles/" + id);
   },
   // Saves a book to the database
-  saveArticles: function(bookData) {
-    return axios.post("/api/articles", bookData);
+  saveArticle: function(articleData) {
+    return axios.post("/api/articles", articleData);
   }
 };

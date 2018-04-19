@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(routes);
+app.use(routes.articleRoute);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {

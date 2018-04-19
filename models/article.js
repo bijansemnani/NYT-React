@@ -3,12 +3,11 @@ const Schema = mongoose.Schema;
 
 
 const articleSchema = new Schema({
-  title: {type: String, required: true},
+  title: {type: String, required: true, unique: true},
   date: {type: Date, default:Date.now},
-  url: {type: String},
-  saved: {type: Boolean, default: false}
+  url: {type: String, unique: true}
 });
 
 const Article = mongoose.model("Article", articleSchema);
 
-module.export = Article;
+module.exports = Article;
