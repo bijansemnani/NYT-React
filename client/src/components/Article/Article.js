@@ -83,7 +83,7 @@ class Article extends Component {
               <FormBtn
                 onClick={this.handleFormSubmit}
               >
-                Submit Book
+                Search
               </FormBtn>
             </form>
             <Link to="/saved">Saved Articles</Link>
